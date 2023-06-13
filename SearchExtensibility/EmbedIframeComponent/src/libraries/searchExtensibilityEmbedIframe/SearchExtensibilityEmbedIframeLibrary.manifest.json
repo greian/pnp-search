@@ -1,0 +1,9 @@
+{
+  "id": "00cb0f02-e805-4bed-bbaf-9a0805b953da",
+  "alias": "SearchExtensibilityEmbedIframeLibrary",
+  "componentType": "Library",
+
+  // The "*" signifies that the version should be taken from the package.json
+  "version": "*",
+  "manifestVersion": 2
+}

@@ -1,0 +1,16 @@
+{
+  "@microsoft/generator-sharepoint": {
+    "plusBeta": false,
+    "isCreatingSolution": true,
+    "version": "1.15.2",
+    "libraryName": "search-extensibility-embed-iframe-component",
+    "libraryId": "5703dd72-2d45-40c0-9c79-dc84af33e259",
+    "environment": "spo",
+    "packageManager": "npm",
+    "solutionName": "SearchExtensibilityEmbedIframeComponent",
+    "solutionShortDescription": "SearchExtensibilityEmbedIframeComponent description",
+    "skipFeatureDeployment": true,
+    "isDomainIsolated": false,
+    "componentType": "library"
+  }
+}
