@@ -1,5 +1,6 @@
 import { IAdaptiveCardAction, IComponentDefinition, IExtensibilityLibrary, ILayoutDefinition, ISuggestionProviderDefinition } from '@pnp/modern-search-extensibility';
-import { EmbedIframeWebComponent } from '../EmbedIframeWebComponent/EmbedIframeComponent';
+import { EmbedIframeWebComponent } from '../EmbedIframeWebComponent/EmbedIframeWebComponent';
+
 
 export class SearchExtensibilityEmbedIframeLibrary implements IExtensibilityLibrary {
 

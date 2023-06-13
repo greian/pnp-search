@@ -5,17 +5,14 @@ import { EmbedIframeComponent } from "./EmbedIframeComponent";
 
 export class EmbedIframeWebComponent extends BaseWebComponent {
 
-  public async connectedCallback(): Promise<void> {
-
-    const props = this.resolveAttributes();
-
-    this._serviceScope.whenFinished(async () => {
-
-      if (props.taskSiteUrl && props.taskListId && props.taskItemId) {
-        const customComponent = <EmbedIframeComponent url={props.url} />;
-        ReactDOM.render(customComponent, this);
-      }
-    });
+  public constructor() {
+    super();
   }
- // ListItemID, SPSiteUrl, ListId
+
+  public async connectedCallback(): Promise<void> {
+    const props = this.resolveAttributes();
+    const embedComponent = <EmbedIframeComponent url={props.url} width={props.width} height={props.height} />;
+    ReactDOM.render(embedComponent, this);
+  }
+
 }

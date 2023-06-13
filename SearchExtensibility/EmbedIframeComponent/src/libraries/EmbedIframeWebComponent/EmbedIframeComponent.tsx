@@ -17,7 +17,7 @@ export class EmbedIframeComponent extends React.Component<IEmbedIframeComponentP
   public render(): React.ReactElement<IEmbedIframeComponentProps> {
 
     const { url, width, height } = this.props;
-    
+
     return <div>
       <iframe src={url} width={width ? width : '100%'} height={height ? height : '600px' } frameBorder={0}
         allowFullScreen allowTransparency={true}
@@ -29,16 +29,3 @@ export class EmbedIframeComponent extends React.Component<IEmbedIframeComponentP
   }
 }
 
-export class EmbedIframeWebComponent extends BaseWebComponent {
-
-  public constructor() {
-    super();
-  }
-
-  public async connectedCallback(): Promise<void> {
-    const props = this.resolveAttributes();
-    const embedComponent = <EmbedIframeComponent url={props.url} />;
-    ReactDOM.render(embedComponent, this);
-  }
-
-}
