@@ -1,14 +1,14 @@
-# search-extensibility-embed-iframe-component
+# Search extensibility - Embed iFrame
 
 ## Summary
 
-Short summary on functionality and used technologies.
+This code creates a search extension for the PnP Search Results Web Part that can be used in the handlebar template. 
 
 [picture of the solution in action, if possible]
 
 ## Used SharePoint Framework Version
 
-![version](https://img.shields.io/badge/version-1.13-green.svg)
+![version](https://img.shields.io/badge/version-1.15.2-green.svg)
 
 ## Applies to
 
@@ -19,7 +19,7 @@ Short summary on functionality and used technologies.
 
 ## Prerequisites
 
-> Any special pre-requisites?
+This is an extension for the PnP Search Results Web Part
 
 ## Solution
 
@@ -31,8 +31,7 @@ Short summary on functionality and used technologies.
 
 | Version | Date             | Comments        |
 | ------- | ---------------- | --------------- |
-| 1.1     | March 10, 2021   | Update comment  |
-| 1.0     | January 29, 2021 | Initial release |
+| 1.0     | June 13, 2023 | Initial release |
 
 ## Disclaimer
 
