@@ -1,0 +1,22 @@
+{
+  "@microsoft/generator-sharepoint": {
+    "plusBeta": false,
+    "isCreatingSolution": false,
+    "nodeVersion": "16.15.1",
+    "sdksVersions": {
+      "@microsoft/microsoft-graph-client": "3.0.2",
+      "@microsoft/teams-js": "2.9.1"
+    },
+    "version": "1.16.1",
+    "libraryName": "fieldValue",
+    "libraryId": "47ee5c2d-7191-48e3-b6d5-fc476249adfd",
+    "environment": "spo",
+    "packageManager": "npm",
+    "solutionName": "fieldValue",
+    "solutionShortDescription": "fieldValue description",
+    "skipFeatureDeployment": true,
+    "isDomainIsolated": false,
+    "componentType": "extension",
+    "extensionType": "FieldCustomizer"
+  }
+}

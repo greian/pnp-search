@@ -1,0 +1,40 @@
+{
+  "$schema": "https://developer.microsoft.com/json-schemas/spfx-build/spfx-serve.schema.json",
+  "port": 4321,
+  "https": true,
+  "serveConfigurations": {
+    "default": {
+      "pageUrl": "https://contoso.sharepoint.com/sites/mySite/SitePages/myPage.aspx",
+      "fieldCustomizers": {
+        "InternalFieldName": {
+          "id": "c981f085-39b8-4e25-bceb-03a7b8bd81bd",
+          "properties": {
+            "sampleText": "Value"
+          }
+        }
+      }
+    },
+    "logItemActions": {
+      "pageUrl": "https://contoso.sharepoint.com/sites/mySite/SitePages/myPage.aspx",
+      "fieldCustomizers": {
+        "InternalFieldName": {
+          "id": "c981f085-39b8-4e25-bceb-03a7b8bd81bd",
+          "properties": {
+            "sampleText": "Value"
+          }
+        }
+      }
+    },
+    "fileLinkFromLookupId": {
+      "pageUrl": "https://{tenantDomain}/SitePages/myPage.aspx",
+      "fieldCustomizers": {
+        "InternalFieldName": {
+          "id": "a6fff545-eefb-4599-8744-0308647f2c67",
+          "properties": {
+            "sampleText": "Value"
+          }
+        }
+      }
+    }
+  }
+}
