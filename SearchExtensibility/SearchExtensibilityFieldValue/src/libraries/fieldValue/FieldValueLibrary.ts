@@ -5,17 +5,12 @@ import {
   IExtensibilityLibrary,
   IComponentDefinition,
   ISuggestionProviderDefinition,
-  // ISuggestionProvider,
   ILayoutDefinition,
-  // LayoutType,
-  // ILayout,
   IAdaptiveCardAction,
-  // LayoutRenderType,
   IQueryModifierDefinition,
-  // IQueryModifier,
   IDataSourceDefinition,
-  // IDataSource
 } from "@pnp/modern-search-extensibility";
+
 import * as Handlebars from "handlebars";
 import { FieldValueWebComponent } from "./components/FieldValueWebComponent";
 

@@ -1,9 +1,0 @@
-{
-  "id": "3695a5eb-0e36-4a75-98e5-d8a36527c9cb",
-  "alias": "SearchExtensibilityLibrary",
-  "componentType": "Library",
-
-  // The "*" signifies that the version should be taken from the package.json
-  "version": "*",
-  "manifestVersion": 2
-}
