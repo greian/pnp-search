@@ -2,11 +2,11 @@ import { BaseWebComponent } from "@pnp/modern-search-extensibility";
 import * as React from "react";
 import * as ReactDOM from "react-dom";
 import { PageContext } from "@microsoft/sp-page-context"
-import { IDataService } from "../../../../common/services/IDataService";
 import { SPFI, spfi, SPFx as spSPFx } from "@pnp/sp";
-import { DataService } from "../../../../common/services/DataService";
+import { DataService, IDataService } from "../../../common/services";
+import { IFieldValueItem } from "../../../common/models";
 import FieldValueComponent from "./FieldValueComponent";
-import { IFieldValueItem } from "../../../../common/models/IFieldValueItem";
+
 
 export class FieldValueWebComponent extends BaseWebComponent {
 
@@ -16,7 +16,7 @@ export class FieldValueWebComponent extends BaseWebComponent {
   public async connectedCallback() {
 
     // Get properties from the handlebar
-    let props: IFieldValueItem = this.resolveAttributes() as IFieldValueItem;
+    const props: IFieldValueItem = this.resolveAttributes() as IFieldValueItem;
 
     console.log("PROPS FROM HANDLEBAR", props);
 

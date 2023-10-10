@@ -1,5 +1,5 @@
 import * as React from 'react';
-import { IFieldValueItem } from '../../../../common/models/IFieldValueItem';
+import { IFieldValueItem } from '../../../common/models';
 
 export interface IFieldValueComponentProps {
   fieldItem: IFieldValueItem;
@@ -10,15 +10,17 @@ const FieldValueComponent: React.FunctionComponent<IFieldValueComponentProps> = 
 
   const { fieldItem, fieldValue } = props;
 
-  var x: JSX.Element = <></>;
+  // Declare output element
+  let outputElement: JSX.Element = <></>;
 
   if (!fieldItem || !fieldValue) {
-    x = <></>;
+    outputElement = <></>;
   } else {
 
+    // Render the field value based on the field type
     switch (fieldItem.fieldType) {
       case 'Hyperlink':
-        x = <>
+        outputElement = <>
           {fieldValue ? <>
             {fieldItem.fieldLabel ? <strong>{fieldItem.fieldLabel}</strong> : <></>}
             <br /><a href={fieldValue.Url}>{fieldValue.Description}</a>
@@ -27,29 +29,29 @@ const FieldValueComponent: React.FunctionComponent<IFieldValueComponentProps> = 
         break;
 
       case 'User':
-        x = <>{fieldValue}</>;
+        outputElement = <>{fieldValue}</>;
         break;
 
       case 'DateTime':
-        x = <>{fieldValue}</>;
+        outputElement = <>{fieldValue}</>;
         break;
 
       case 'Lookup':
-        x = <>{fieldValue}</>;
+        outputElement = <>{fieldValue}</>;
         break;
 
       case 'TaxonomyFieldType':
-        x = <>{fieldValue.Label}</>;
+        outputElement = <>{fieldValue.Label}</>;
         console.log('TaxonomyFieldType', fieldValue);
         break;
 
       default:
-        x = <>{fieldValue}</>;
+        outputElement = <>{fieldValue}</>;
         break;
     }
   }
 
-  return x;
+  return outputElement;
 
 }
 

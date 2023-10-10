@@ -1,0 +1,9 @@
+{
+  "id": "b52615fe-9c58-4acc-9405-37af41b07dd9",
+  "alias": "FieldValueLibrary",
+  "componentType": "Library",
+
+  // The "*" signifies that the version should be taken from the package.json
+  "version": "*",
+  "manifestVersion": 2
+}

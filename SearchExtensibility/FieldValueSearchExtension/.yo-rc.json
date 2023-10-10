@@ -8,11 +8,11 @@
       "@microsoft/teams-js": "2.9.1"
     },
     "version": "1.16.1",
-    "libraryName": "fieldValue",
+    "libraryName": "field-value-extension",
     "libraryId": "47ee5c2d-7191-48e3-b6d5-fc476249adfd",
     "environment": "spo",
     "packageManager": "npm",
-    "solutionName": "fieldValue",
+    "solutionName": "field-value-extension",
     "solutionShortDescription": "fieldValue description",
     "skipFeatureDeployment": true,
     "isDomainIsolated": false,

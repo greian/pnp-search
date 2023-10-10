@@ -1,10 +1,10 @@
 {
   "$schema": "https://developer.microsoft.com/json-schemas/spfx-build/package-solution.schema.json",
   "solution": {
-    "name": "Search Extension - Field Value",
-    "id": "47ee5c2d-7191-48e3-b6d5-fc476249adfd",
+    "name": "Search Extensibility for Field Value",
+    "id": "9ff79381-95ec-4bdd-8c0a-f89401ff75af",
     "version": "1.0.0.0",
-    "includeClientSideAssets": false,
+    "includeClientSideAssets": true,
     "skipFeatureDeployment": true,
     "isDomainIsolated": false,
     "developer": {
@@ -12,14 +12,14 @@
       "websiteUrl": "",
       "privacyUrl": "",
       "termsOfUseUrl": "",
-      "mpnId": "Undefined-1.16.1"
+      "mpnId": "Undefined-1.17.3"
     },
     "metadata": {
       "shortDescription": {
-        "default": "Search Extension for Field Value"
+        "default": "search-extensibility-fieldValue description"
       },
       "longDescription": {
-        "default": "Search Extension for showing a field falue for a chosen list and item id"
+        "default": "search-extensibility-fieldValue description"
       },
       "screenshotPaths": [],
       "videoUrl": "",
@@ -27,6 +27,6 @@
     }
   },
   "paths": {
-    "zippedPackage": "solution/search-extension-field-value.sppkg"
+    "zippedPackage": "solution/search-extensibility-field-value.sppkg"
   }
 }

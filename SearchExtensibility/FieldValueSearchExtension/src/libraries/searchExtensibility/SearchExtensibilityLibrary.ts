@@ -1,14 +1,9 @@
-import { IAdaptiveCardAction, IComponentDefinition, IDataSourceDefinition, IExtensibilityLibrary, ILayoutDefinition, IQueryModifierDefinition, ISuggestionProviderDefinition } from "@pnp/modern-search-extensibility";
+import { IComponentDefinition, IDataSourceDefinition, IExtensibilityLibrary, ILayoutDefinition, ISuggestionProviderDefinition } from "@pnp/modern-search-extensibility";
 import { FieldValueWebComponent } from "./components/FieldValueComponent/FieldValueWebComponent";
 
 export class SearchExtensibilityLibrary implements IExtensibilityLibrary {
 
-  invokeCardAction(action: IAdaptiveCardAction): void {
-    console.log(action);
-  }
-  getCustomQueryModifiers?(): IQueryModifierDefinition[] {
-    return [];
-  }
+
   getCustomDataSources?(): IDataSourceDefinition[] {
     return [];
   }
@@ -16,7 +11,7 @@ export class SearchExtensibilityLibrary implements IExtensibilityLibrary {
   public getCustomWebComponents(): IComponentDefinition<any>[] {
     return [
       {
-        componentName: 'field-value',
+        componentName: 'field-value-component',
         componentClass: FieldValueWebComponent
       }
     ];
