@@ -2,7 +2,9 @@
 
 ## Summary
 
-Short summary on functionality and used technologies.
+This code example is a Search Extension that can be used in the PnP Search Web Parts by including a <field-value> component in the handlebar code.
+The field-value extension shows the value of a field based on a site url, an item id and a list name. The code handles different types of values (text, numbers, dates, managed metadata, etc.). 
+
 
 [picture of the solution in action, if possible]
 
@@ -19,20 +21,19 @@ Short summary on functionality and used technologies.
 
 ## Prerequisites
 
-> Any special pre-requisites?
+> Search Extensions for PnP Search requires SharePoint Framework 1.15.2 (currently, per 2023-10-10)
 
 ## Solution
 
 | Solution    | Author(s)                                               |
 | ----------- | ------------------------------------------------------- |
-| folder name | Author details (name, company, twitter alias with link) |
+| FieldValueSearchExtension | Glenn Reian (Web Stack Umeå AB) |
 
 ## Version history
 
 | Version | Date             | Comments        |
 | ------- | ---------------- | --------------- |
-| 1.1     | March 10, 2021   | Update comment  |
-| 1.0     | January 29, 2021 | Initial release |
+| 1.0     | October 10, 2023 | Initial release |
 
 ## Disclaimer
 
