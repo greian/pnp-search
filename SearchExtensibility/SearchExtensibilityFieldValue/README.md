@@ -1,16 +1,18 @@
-# search-extensibility-field-value
+# Search Extensibility - Field Value
 
 ## Summary
 
 This code example is a Search Extension that can be used in the PnP Search Web Parts by including a <field-value> component in the handlebar code.
-The field-value extension shows the value of a field based on a site url, an item id and a list name. The code handles different types of values (text, numbers, dates, managed metadata, etc.). 
+The field-value extension shows the value of a field based on a site url, an item id and a list name. The code handles different types of values (text, numbers, dates, managed metadata, etc.). In the PnP Search Results Web Part, handelbars can be used to create the layout of the search result, and Managed Properties from the search index are used to display the values. But, in some cases, you might want to pick up the actual value of a field using the id of the item. Here is an example of how this can be used in a PnP Handlebar Template:
+
+![image](https://github.com/greian/pnp-search/assets/8362190/82135476-4ad7-4fa2-8c53-df117ce8294a)
 
 
-[picture of the solution in action, if possible]
+
 
 ## Used SharePoint Framework Version
 
-![version](https://img.shields.io/badge/version-1.17.3-green.svg)
+![version](https://img.shields.io/badge/version-1.15.2-green.svg)
 
 ## Applies to
 
@@ -53,17 +55,15 @@ The field-value extension shows the value of a field based on a site url, an ite
 
 ## Features
 
-Description of the extension that expands upon high-level summary above.
-
 This extension illustrates the following concepts:
 
-- topic 1
-- topic 2
-- topic 3
+- PnP Search Web Parts
+- PnP Search Extensibility
+- SharePoint Framework 1.15.2 - Library
 
-> Notice that better pictures and documentation will increase the sample usage and the value you are providing for others. Thanks for your submissions advance.
+In the picture below we have used the Field Value search extension to show comments:
 
-> Share your web part with others through Microsoft 365 Patterns and Practices program to get visibility and exposure. More details on the community, open-source projects and other activities from http://aka.ms/m365pnp.
+![image](https://github.com/greian/pnp-search/assets/8362190/578d36b6-4675-4c78-8694-bb0bf0bbe58a)****
 
 ## References
 
